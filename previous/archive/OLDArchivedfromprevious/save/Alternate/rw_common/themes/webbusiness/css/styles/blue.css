@@ -1,0 +1,83 @@
+body {
+	background: repeat url(../../images/body_bg.png);
+}
+
+.blog-entry-title a:hover, a:link, a:visited {
+	color: #2563ab;
+}
+
+a:hover, a:active {
+	color: #92b1d5;
+}
+
+#logo {
+	background: no-repeat url(../../images/logo.png);
+}
+
+#container {
+	background: repeat-y url(../../images/content_middle.png);
+}
+
+#container #top {
+	background: url(../../images/content_top.png) no-repeat;
+}
+
+#container #bottom {
+	background: url(../../images/content_bottom.png) no-repeat;
+}
+
+#pageHeader {
+	background: repeat-x url(../../images/header_bg.png);
+}
+
+#pageHeader h2 {
+	color: #92b1d5;
+}
+
+#footer {
+	background: no-repeat url(../../images/footer_bg.png);
+}
+
+#navcontainer {
+	background: url(../../images/navcontainer_bg.png) repeat-x;
+}
+
+#navcontainer #current {
+	background: no-repeat url(../../images/button_over.png) right top;
+	color: #0b2b64;
+	text-shadow: 1px 1px 2px #ffffff;
+}
+
+#navcontainer .currentAncestor {
+	background: no-repeat url(../../images/button_over.png) right top;
+	color: #0b2b64;
+	text-shadow: 1px 1px 2px #ffffff;
+}
+
+#navcontainer a {
+	background: no-repeat url(../../images/button_end.png) right top;
+	color: #eff3f9;
+}
+
+#navcontainer a:hover {
+	background: no-repeat url(../../images/button_over.png) right top;
+	color: #0b2b64;
+	text-shadow: 1px 1px 2px #ffffff;
+}
+
+#navcontainer ul ul a {
+	color: #81aad4;
+}
+
+.photo-navigation {
+	background: repeat-x url(../../images/header_bg.png);
+}
+
+.photo-navigation a:hover {
+	color: #0b2b64;
+}
+
+.photo-caption {
+	color: #92b1d5;
+}
+

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>Blog</title>
+    <link>http://www.windstream-inc.com/WindStream_A-1/Blog</link>
+    <description>Please join us in following the news on  our environment and what we can all do to make a difference!</description>
+    <item>
+      <link>http://www.windstream-inc.com/WindStream_A-1/Blog/Entries/2009/11/29.html</link>
+      <guid isPermaLink="false">304bde07-a2cd-4181-909a-e14ab7613801</guid>
+      <pubDate>Sun, 29 Nov 2009 16:57:14 -0800</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.windstream-inc.com/WindStream_A-1/Blog/Entries/2009/11/29.html#comment_layer"></iweb:comment>
+    </item>
+    <iweb:dateFormat>EEEE, MMMM d, yyyy</iweb:dateFormat>
+    <iweb:baseURL>http://www.windstream-inc.com/WindStream_A-1/Blog</iweb:baseURL>
+    <iweb:maximumSummaryItems>5</iweb:maximumSummaryItems>
+  </channel>
+</rss>

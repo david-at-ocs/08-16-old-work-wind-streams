@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="8FA46465-779C-4E8B-A7E3-B51169C4A47C">
+  <lastEdited clientType="local-build-20091129" date="2009-11-29 21:06:31 -0800"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>ECOnomical Energy!</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText></richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText></richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Sunday, November 29, 2009&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="29_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

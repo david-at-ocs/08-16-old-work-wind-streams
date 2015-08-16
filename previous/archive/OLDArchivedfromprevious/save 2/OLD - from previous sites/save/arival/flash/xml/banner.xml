@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<settings
+		bannerWidth = "830"
+		bannerHeight = "360"
+		bannerHorizontalMargin = "0"
+		bannerVerticalMargin = "0"
+		bannerBackGroundAlpha = "100"
+		bannerBackGroundColor = "0xeeeeee"
+
+		displayMenu = "no"
+		displayInfos = "no"
+		displayButtonNextPrev = "autoHide"
+		displayButtonSlideshow = "autoHide"
+
+		menuXposition = "510"
+		menuYposition = "350"
+		menuButtonsSpace = "3"
+		menuButtonsVisible = "4"
+		menuOrientation = "horizontal"
+
+		buttonNextXposition = "802"
+		buttonNextYpoistion = "180"
+		buttonPrevXposition = "28"
+		buttonPrevYposition = "180"
+		buttonSlideshowXposition = "415"
+		buttonSlideshowYposition = "180"
+		buttonsIconColor = "0xffffff"
+		buttonsBackGroundColor = "0xff7e00"
+		buttonsRotate = "no"
+
+		slideshowAutostart = "yes"
+		slideshowAnimationIconColor = "0x000000"
+		slideshowAnimationBackGroundColor = "0xffffff"
+
+		transitionType = "10"
+		transitionEasingDuration = "1"
+		transitionEasingType = "easeInOutExpo"
+
+		infosXposition = "534"
+		infosYposition = "1"
+		infosWidth = "295"
+		infosHeight = "380"
+		infosBackGroundAlpha = "81"
+		infosBackGroundColor = "0xa3a856"
+
+		titleXposition = "30"
+		titleYposition = "60"
+		titleWidth = "194"
+		titleTextAlign = "left"
+
+		descriptionXposition = "30"
+		descriptionYposition = "120"
+		descriptionWidth = "194"
+		descriptionTextAlign = "left"
+
+		preloaderXposition = "28"
+		preloaderYpoistion = "28"
+	/>
+	<items>
+		<item>
+			<itemSettings
+				buttonsIconColor = "0xffffff"
+				buttonsBackGroundColor = "0xff7e00"
+				infoBackGroundColor = ""
+				slideshowInterval = "5"
+				slideshowAnimationIconColor = "0x000000"
+				slideshowAnimationBackGroundColor = "0xffffff"
+				targetLink = ""
+			/>
+			<file><![CDATA[images/photos/home/02.jpg]]></file>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+			<link><![CDATA[]]></link>
+		</item>
+		<item>
+			<itemSettings
+				buttonsIconColor = "0xffffff"
+				buttonsBackGroundColor = "0xff7e00"
+				infoBackGroundColor = ""
+				slideshowInterval = "5"
+				slideshowAnimationIconColor = "0x000000"
+				slideshowAnimationBackGroundColor = "0xffffff"
+				targetLink = ""
+			/>
+			<file><![CDATA[images/photos/home/03.jpg]]></file>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+			<link><![CDATA[]]></link>
+		</item>
+		<item>
+			<itemSettings
+				buttonsIconColor = "0xffffff"
+				buttonsBackGroundColor = "0xff7e00"
+				infoBackGroundColor = ""
+				slideshowInterval = "5"
+				slideshowAnimationIconColor = "0x000000"
+				slideshowAnimationBackGroundColor = "0xffffff"
+				targetLink = ""
+			/>
+			<file><![CDATA[images/photos/home/04.jpg]]></file>
+			<title><![CDATA[]]></title>
+			<description><![CDATA[]]></description>
+			<link><![CDATA[]]></link>
+		</item>
+	</items>
+</index>

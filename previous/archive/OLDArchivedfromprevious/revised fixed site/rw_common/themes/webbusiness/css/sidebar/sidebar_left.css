@@ -1,0 +1,20 @@
+/* Change the sidebar float to the opposite of the main styles.css file. Also change the padding from right to left. */
+ #sidebarContainer {
+	float: left;
+}
+
+
+#sidebarContainer #sidebar {
+	padding-left: 40px;
+	padding-right: 10px;
+}
+/* set the content containers margin-right/margin-left (depending on what the float is set to above) to the width of the sidebar (the width can be found in the styles.css file) and then set the opposite margin to 0px. This prevents the content from flowing under the sidebar if it is longer*/
+#contentContainer {
+	float: right;
+}
+
+#contentContainer #content {
+	border-right: none;
+	border-left: 1px solid #cccccc;
+	padding-left: 15px;
+}

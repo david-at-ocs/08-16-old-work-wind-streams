@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>ECOnomical Energy!</title>
+    <link>http://www.windstream-inc.com/WindStream_A-1/Blog/Blog.html</link>
+    <description>Please join us in following the news on  our environment and what we can all do to make a difference!</description>
+    <generator>iWeb 3.0.1</generator>
+    <image>
+      <url>http://www.windstream-inc.com/WindStream_A-1/Blog/Blog_files/dv1634003_c.jpg</url>
+      <title>ECOnomical Energy!</title>
+      <link>http://www.windstream-inc.com/WindStream_A-1/Blog/Blog.html</link>
+    </image>
+    <item>
+      <link>http://www.windstream-inc.com/WindStream_A-1/Blog/Entries/2009/11/29.html</link>
+      <guid isPermaLink="false">304bde07-a2cd-4181-909a-e14ab7613801</guid>
+      <pubDate>Sun, 29 Nov 2009 16:57:14 -0800</pubDate>
+      <description>&lt;a href=&quot;http://www.windstream-inc.com/WindStream_A-1/Blog/Entries/2009/11/29_files/AA043081_3x4a-1.jpg&quot;&gt;&lt;img src=&quot;http://www.windstream-inc.com/WindStream_A-1/Blog/Media/object001.png&quot; style=&quot;float:left; padding-right:10px; padding-bottom:10px; width:176px; height:132px;&quot;/&gt;&lt;/a&gt; </description>
+      <enclosure url="http://www.windstream-inc.com/WindStream_A-1/Blog/Entries/2009/11/29_files/AA043081_3x4a-1.jpg" length="38419" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

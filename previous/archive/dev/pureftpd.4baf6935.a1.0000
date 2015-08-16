@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Windstream Technologies - The answer is in the wind.</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<META NAME="Generator" CONTENT="EditPlus">
+	<META NAME="Author" CONTENT="">
+	<META NAME="Keywords" CONTENT="">
+	<META NAME="Description" CONTENT="">
+	<SCRIPT rel="text/javascript"  src="js/page.js"></SCRIPT>
+
+ </HEAD>
+
+ <BODY>
+	<div id="page_bg">
+		<div id="page">
+			<div id="page_content">
+				<div id="navigation">
+					<div id="navigation_left">
+						<div id="navigation_right">
+							<ul>
+								<li>
+									<a href="index.html" onmouseover="roll_over('menu_home', 'images/menu/home_hover.gif')" onmouseout="roll_over('menu_home', 'images/menu/home.gif')"><img id="menu_home" src="images/menu/home.gif" title="Home" alt="Home"></a>
+								</li>
+								<li>
+									<a href="products.html" onmouseover="roll_over('menu_products', 'images/menu/products_hover.gif')" onmouseout="roll_over('menu_products', 'images/menu/products.gif')"><img id="menu_products" src="images/menu/products.gif" title="Products" alt="Products"></a>
+								</li>
+								<li>
+									<a href="management.html" onmouseover="roll_over('menu_management', 'images/menu/management_hover.gif')" onmouseout="roll_over('menu_management', 'images/menu/management.gif')"><img src="images/menu/management.gif" title="Management" alt="Management" id="menu_management"></a>
+								</li>
+								<li id="menu_press">
+									<a href="press.html" onmouseover="roll_over('menu_blog', 'images/menu/blog_hover.gif')" onmouseout="roll_over('menu_blog', 'images/menu/blog.gif')"><img src="images/menu/press.gif" title="Home" alt="Home"></a>
+								</li>
+								<li>
+									<a href="jobs.html" onmouseover="roll_over('menu_jobs', 'images/menu/jobs_hover.gif')" onmouseout="roll_over('menu_jobs', 'images/menu/jobs.gif')"><img src="images/menu/jobs.gif" id="menu_jobs" title="Jobs" alt="Jobs"></a>
+								</li>
+								<li>
+									<a href="contact.html" onmouseover="roll_over('menu_contact', 'images/menu/contact_hover.gif')" onmouseout="roll_over('menu_contact', 'images/menu/contact.gif')"><img src="images/menu/contact.gif" title="Contact" alt="Contact" id="menu_contact"></a>
+								</li>
+							</ul>
+
+
+						</div>
+					</div>
+				</div>
+				<div id="content">
+
+					<!-- =============== Content : Begins ======================== -->
+					<div id="content_content">
+						<div id="content_content_title"></div>
+						<div class="hr"></div>
+						<ul id="latest_news">
+							<li>
+								<img src="images/tpc-th.jpg" title="Latest News 1" alt="Latest News 1" class="latest_news_photo">
+								<div class="latest_news_details">
+									<div class="latest_news_title">December 1, 2009</div>
+									WindStream Technologies is proud to announce that it will be moving to the Purdue Technology Center in New Albany, Indiana in early 2010. <br />
+									<a href="article-112309.html">Read More</a>
+								</div>
+							</li>
+							<li>
+								<img src="images/stephanChu.jpg" title="Latest News 1" alt="Latest News 1" class="latest_news_photo">
+								<div class="latest_news_details">
+									<div class="latest_news_title">Oct 22, 2009</div>
+									WindStream Technologies, Inc. Attends the Clean Energy Economy Forum at the White House.<br />
+									<a href="news-102209.html">Read More</a>
+
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- =============== Content : Ends ======================== -->
+
+
+					<!-- =============== Left Panel : Begins ======================== -->
+					<div id="left_panel">
+						<div id="left_panel_title"></div>
+						<div class="hr"></div>
+						<div id="left_panel_content">
+							<img src="images/welcome_banner.jpg" title="Welcome" alt="Welcome">
+							<div class="clear"></div>
+							<p>WindStream makes wind turbines small enough, efficient enough, and affordable enough for everyone to lessen their environmental impact while reducing electricity costs.</p><p>WindStream will soon be releasing its breakthrough new mass-market line of vertical axis wind turbines for municipal, residential, and small business use.</p>
+						    
+						</div>
+					</div>
+					<!-- =============== Left Panel : Ends ======================== -->
+
+
+					<!-- =============== Right Panel : Begins ======================== -->
+					<div id="right_panel">
+						<div id="right_panel_title"></div>
+						<div class="hr"></div>
+						<br />
+						<a href="http://www.facebook.com/group.php?gid=186896782790"><img src="images/facebook.png" title="Facebook" alt="Facebook"></a>&nbsp;&nbsp;&nbsp;
+						<a href="http://www.twitter.com/windstreamtech"><img src="images/twitter.png" title="Twitter" alt="Twitter"></a>&nbsp;&nbsp;&nbsp;
+						<a href="http://www.linkedin.com/companies/windstream-technologies?trk=comp_net&goback=.cps_1259958708156_1"><img src="images/linkedin.png" title="Linked In" alt="Linked In"></a>
+					</div>
+					<!-- =============== Right Panel : Ends ======================== -->
+
+				</div>
+
+				<div id="footer">
+					<div id="footer_left">
+						<div id="footer_right">
+						Copyright &copy; 2009 Windstream Technologies., Inc. All rights reserved  | <a href="tos.html">Terms of Use</a> | <a href="policy.html">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+  
+ </BODY>
+</HTML>

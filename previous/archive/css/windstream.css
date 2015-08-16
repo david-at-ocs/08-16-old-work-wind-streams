@@ -1,0 +1,682 @@
+body.wrap {
+	margin: 0 auto;
+	background: #fff;
+	width: 100%;
+	height:100%;
+	min-height:100%;/*for mozilla*/
+}
+
+h1 {
+	font-size: 16pt;
+	font-family: Century, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	text-decoration: none;
+	letter-spacing: -.02em;
+	font-weight: normal;
+	margin: 0 0;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 11pt;
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 0;
+	margin-bottom: 0px;
+}
+
+h3 {
+	font-size: 14pt;
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	text-decoration: none;
+	font-style: normal;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+p {
+	font-size: 11pt;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	text-decoration: none;
+	letter-spacing: .03em;
+	color: #000;
+	margin: 0 0;
+	margin-bottom: 20px;
+	letter-spacing: 0.05em;
+}
+
+/* ----------------------------------- header container ------------------------------------ */
+
+#headercontainer {
+	/*border: #000000 1px solid;
+	margin: 20px auto;*/
+	margin: 20px auto;
+	width: 940px;
+	background-color: #fff;
+}
+
+#logocontainer {
+	margin: 0px auto;
+}
+	
+#logocontainer li {
+	padding: 0px;
+	float: left;
+	list-style: none;
+	/*display: block;
+	width: 182px;
+	width: 175px;
+	border-right: 3px solid #00447C;*/
+}
+
+#home { /*----------------------------------------- main logo nav -------------------------------------------*/
+	display: block;
+	width: 300px;
+	height: 95px;
+	background: url("../images/nav/windstream-300x95.png") no-repeat;
+}
+
+#home:hover { 
+	background-position: 0 0px;
+}
+
+#home span {
+	display: none;
+}
+
+#headlinecontainer {
+	float: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 557px;
+}
+
+#headlinecontainer h1 {
+	font-size: 12.5pt;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	color: #999;
+	margin: 0 0;
+	letter-spacing: 0.01em
+}
+
+/* --------------------------------------------------- start nav ------------------------------------------- */
+
+#nav {
+	margin: 0px auto;
+}
+	
+#nav li {
+	padding: 0px;
+	padding-top: 20px;
+	float: right;
+	list-style: none;
+	/*display: block;
+	width: 182px;
+	width: 175px;
+	border-right: 3px solid #00447C;*/
+}
+
+#company { /*----------------------------------------- company nav -------------------------------------------*/
+	display: block;
+	width: 154px;
+	height: 24px;
+	background: url("../images/nav/company-154x48.png") no-repeat 0 0;
+}
+
+#company:hover { 
+	background-position: 0 -24px;
+}
+
+#company span {
+	display: none;
+}
+
+#products { /*----------------------------------------- products nav -------------------------------------------------------*/
+	display: block;
+	width: 141px;
+	height: 24px;
+	background: url("../images/nav/products-141x48.png") no-repeat 0 0;
+}
+
+#products:hover { 
+	background-position: 0 -24px;
+}
+
+#products span {
+	display: none;
+}
+
+#careers { /*----------------------------------------- careers nav -------------------------------------------------------*/
+	display: block;
+	width: 131px;
+	height: 24px;
+	background: url("../images/nav/careers-131x48.png") no-repeat 0 0;
+}
+
+#careers:hover { 
+	background-position: 0 -24px;
+}
+
+#careers span {
+	display: none;
+}
+
+#contact { /*----------------------------------------- contact nav -------------------------------------------------------*/
+	display: block;
+	width: 132px;
+	height: 24px;
+	background: url("../images/nav/contact-132x48.png") no-repeat 0 0;
+}
+
+#contact:hover { 
+	background-position: 0 -24px;
+}
+
+#contact span {
+	display: none;
+}
+
+/*----------------------------------------------------- end nav -------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+#spacer {
+	clear: both;
+	height: 40px;
+	margin: 0px auto;
+}
+
+/*-------------------------------------------------- start banner ---------------------------------------------------*/
+
+#bannerbackgound {
+	clear: both;
+	background-image: url(../images/banner-bg.png);
+	border-top: #ddd 1px solid;
+	border-bottom: #ddd 1px solid;
+	margin: 0px auto;
+	width: 100%;
+	height: 300px;
+}
+
+#bannercontainer {
+	position: relative;
+	margin-top: 30px;
+	width: 940px;	
+	margin: 0px auto;
+	border-right: #ddd 1px solid;
+	border-left: #ddd 1px solid;
+}
+
+#banneroverlay {
+	/*background: url("../images/banners/banner-overlay-330x300.png") no-repeat;
+	width: 330;
+	height: 300;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5; /*keeps the overlay on top of rotating banners */
+}
+
+.banneroverlaycontent {
+	position: absolute;
+	width: 250px;
+	margin: 0 auto;
+	padding: 80px 50px;
+	top: 0;
+	left: 0;
+	color: white;
+	z-index: 6; /*keeps the overlay content on top of rotating overlay */
+}
+
+.banneroverlaycontent p {
+	color: white;
+}
+
+.newsheadline {
+	width: 235px;
+	border-bottom: #fff 1px solid;
+	line-height: 18px;
+	padding-bottom: 3px;
+	color: white;
+}
+
+.bannernews {
+	margin: 0px auto;
+	padding: 0px 0px;
+	list-style: none;
+	font-size: 10pt;
+	line-height: 18px;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+	
+.bannernews li {
+	width: 100%;
+	color: white;
+	font-size: 10pt;
+	line-height: 18px;
+	font-size: 11pt;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	list-style: url(../images/nav/right-arrow.png);
+	margin-left: 20px;
+}
+	
+.bannernews li a {
+	color: white;
+	display: block;
+	padding-top: 6px;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+	
+.bannernews li a:hover {
+	background-color: #777;
+}
+	
+.bannernews li a:visited {
+	text-decoration: none;
+}
+
+/*------------------------------------ more info banner button -------------------------------------------*/
+
+.moreinfo {
+	margin: 0px auto;
+}
+	
+.moreinfo li {
+	padding: 10px 0;
+	float: left;
+	list-style: none;
+	/*display: block;
+	width: 182px;
+	width: 175px;
+	border-right: 3px solid #00447C;*/
+}
+
+.launch {
+	display: block;
+	width: 85px;
+	height: 25px;
+	background: url("../images/nav/more-info-85x50.png") no-repeat 0 0;
+}
+
+.launch:hover { 
+	background-position: 0 -25px;
+}
+
+.launch span {
+	display: none;
+}
+
+.signup {
+	display: block;
+	width: 85px;
+	height: 25px;
+	background: url("../images/nav/sign-up-85x50.png") no-repeat 0 0;
+}
+
+.signup:hover { 
+	background-position: 0 -25px;
+}
+
+.signup span {
+	display: none;
+}
+
+.bannerbutton {
+	display: none;
+}
+
+/*------------------------------------end more info banner button -------------------------------------------*/
+
+/*----------------------------------------------- end banner ----------------------------------------------------------*/
+
+/*----------------------------------------------- start body ----------------------------------------------------------*/
+
+#spacer2 {
+	height: 20px;
+	margin: 0px auto;
+}
+
+#bodybg {
+	background: url(../images/body-bg.png) repeat-x;
+	margin: 0px auto;
+	width: 100%;
+}
+
+#bodycontainer {
+	position: relative;
+	margin-top: 30px;
+	width: 940px;
+	height: 220px;
+	margin: 0px auto;
+	padding: 0 0px;
+}
+
+#4col {
+	margin: 0px auto;
+}
+	
+#4col li {
+	padding: 0 5px;
+	padding-top: 30px;
+	float: left;
+	list-style: none;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+
+.col1 {
+	float: left;
+	margin: 0 5px;
+	padding: 10px;
+	display: block;
+	width: 205px;
+	height: 175px;
+	overflow: hidden;
+	background-color: #fff;
+	border: #ddd 1px solid;
+}
+
+.col1 p {
+	margin-bottom: 8px;
+	color: #555;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+	
+.col1 a {
+	text-decoration: none;
+	color: blue;
+}
+	
+.col1 a:hover {
+	text-decoration: underline;
+}
+	
+.col1 a:visited {
+	text-decoration: none;
+}
+	
+.col1 a:active {
+	color: #555;
+	text-decoration: underline;
+}
+
+#investor {
+	margin: 0px auto;
+	padding: 0px 0px;
+	list-style-image: url(../images/nav/pdf_logo.jpg);
+	padding-left: 50px;
+}
+	
+#investor li {
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	font-size: 11pt;
+	padding-bottom: 3px;
+}
+	
+#investor li a {
+	color: blue;
+	text-decoration: none;
+}
+	
+#investor li a:hover {
+	color: #555;
+	text-decoration: underline;
+}
+	
+#investor li a:visited {
+	text-decoration: none;
+}
+	
+#investor li a:active {
+	text-decoration: underline;
+}
+
+.colheadline {
+	width: 190px;
+	border-bottom: #555 1px solid;
+	margin-bottom: 8px;
+	color: #555;
+	padding-bottom:3px;
+}
+
+.colbody {
+	font-size: 10pt;
+	line-height: 16px;
+	color: #555;
+}
+
+.productbody {
+	font-size: 10.5pt;
+	line-height: 16px;
+	color: #555;
+}
+
+.newslink {
+	font-size: 10pt;
+	line-height: 16px;
+	color: #555;
+}
+	
+.newslink a {
+	text-decoration: none;
+	color: blue;
+}
+	
+.newslink a:hover {
+	text-decoration: underline;
+}
+	
+.newslink a:visited {
+	text-decoration: none;
+}
+	
+.newslink a:active {
+	color: #555;
+	text-decoration: underline;
+}
+
+.producth2 {
+	font-size: 11pt;
+	line-height: 16px;
+	color: #222;
+	padding-top: 10px;
+}
+
+.producth3 {
+	font-size: 11pt;
+	line-height: 16px;
+	color: #555;
+}
+
+.productul {
+	font-size: 10.5pt;
+	line-height: 16px;
+	color: #555;
+	list-style: disc;
+	text-indent: 3px;
+	padding-left: 300px;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+
+.colbodyspan {
+	font-size: 10pt;
+	line-height: 16px;
+	color: #555;
+}
+
+.colnews {
+	margin: 0px auto;
+	padding: 0px 0px;
+	list-style: none;
+	font-size: 10pt;
+	line-height: 18px;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+	
+.colnews li {
+	width: 100%;
+	/*display: block;
+	width: 182px;
+	width: 175px;
+	border-right: 3px solid #00447C;*/
+}
+	
+.colnews li a {
+	/*background-color: #f2f2f2;*/
+	color: #555;
+	display: block;
+	padding-top: 6px;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+	
+.colnews li a:hover {
+	background-color: #ddd;
+}
+	
+.colnews li a:visited {
+	text-decoration: none;
+}
+	
+.nav li a:active {
+	color: #555;
+	text-decoration: none;
+}
+
+.tweetnews {
+	margin: 0px auto;
+	padding: 0px 0px;
+	list-style: none;
+	font-size: 10pt;
+	line-height: 18px;
+	font-family: Tahoma, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+	
+.tweetnews li {
+	width: 100%;
+	/*display: block;
+	width: 182px;
+	width: 175px;
+	border-right: 3px solid #00447C;*/
+}
+	
+.tweetnews li a {
+	/*background-color: #f2f2f2;*/
+	color: #555;
+	text-decoration: underline;
+}
+	
+.tweetnews li a:hover {
+}
+	
+.tweetnews li a:visited {
+}
+	
+.tweetnews li a:active {
+	color: #555;
+	text-decoration: none;
+}
+
+#popcontainer {
+	float: left;
+	margin: 5px 5px;
+}
+
+/* ----------------------------------- form stuff -------------------------------------------- */
+
+.form-contact {
+	margin-top:20px;
+}
+
+.holder {
+	float:left;
+	clear:both;
+	width:550px;
+	margin:0 0 12px;
+}
+
+/* ----------------------------------- footer stuff -------------------------------------------- */
+
+#footer {
+	margin: 0px auto;
+	width: 100%;
+	border-top: #ddd 1px solid;
+}
+
+
+#footertagline {
+	padding-top: 10px;
+	text-align: center;
+	margin: 0px 100px;
+	font-weight: bold;
+}
+
+#footermenu {
+	clear: both;
+	padding-top: 40px;
+	text-align: center;
+}
+
+#copyright {
+	color: #00447C;
+	font-size: 8pt;
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* ----------------------------------- text decorations ---------------------------------------- */
+
+a:link.footeritem {
+	color: #00447C;
+	/* letter-spacing: 1px;*/
+	font-size: 8pt;
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited.footeritem {
+	color: #00447C;
+	/* letter-spacing: 1px;*/
+	font-size: 8pt;
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover.footeritem {
+	color: #0B0D2E;
+	/* letter-spacing: 1px;*/
+	font-size: 8pt;
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:active.footeritem {
+	color: #00447C;
+	/* letter-spacing: 1px;*/
+	font-size: 8pt;
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

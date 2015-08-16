@@ -1,0 +1,1123 @@
+parker&kent
+
+XHTML/CSS Arrowhead Template - 3 Skins
+
+/********************************************************/
+Version:
+/********************************************************/
+
+1.0
+
+/********************************************************/
+Are included in this package:
+/********************************************************/
+
+Folders:
+
+- psd		[source folder - you don't need to upload it on your server when you publish your template]
+
+			This folder contains all the layered psd files of the 3 skins of this template.
+
+- skin_1		[online folder - you need to upload its contents on your server when you publish your template]
+
+			This folder contains all the files and assets of the skin n° 1.
+
+- skin_2		[online folder - you need to upload its contents on your server when you publish your template]
+
+			This folder contains all the files and assets of the skin n° 2.
+
+- skin_3		[online folder - you need to upload its contents on your server when you publish your template]
+
+			This folder contains all the files and assets of the skin n° 3.
+
+/********************************************************/
+What's included into the skin folders:
+/********************************************************/
+
+Every skin folder contains a complete and different version of the template.
+To publish your website just upload on your server all the files and folders that you find into the skin folder that you want to use.
+
+Every skin folder contains these files and folders:
+
+/*************************/
+css folder
+/*************************/
+
+The css folder contains 2 css files.
+The file skin.css handles all the colors of the template. Check the file comments to identify the styles of every html page element.
+The file style_menu.css handles the multi level menu system. To edit the colors of the menu always refer to the skin.css file.
+
+/*************************/
+flash folder
+/*************************/
+
+The flash folder contains the home page banner rotator swf file and the XML folder that contains the XML file of the banner rotator settings.
+A complete explanation of the banner rotator XML settings comes later in this help file.
+If you don't want to use the flash banner rotator in your website, we've created an alternative html page. Check the index_no_flash.html file.
+
+/*************************/
+images folder
+/*************************/
+
+The images folder contains all the images and icons used into the template.
+
+/*************************/
+jscript folder
+/*************************/
+
+The jscript folder contains all the javascript files used into the template.
+
+/*************************/
+html and php files
+/*************************/
+
+This template comes with 10 html pages to present your contents.
+
+Every tag can have a class, an id or both.
+The classes are defined into the style.css file. This css file is used to manage the layout.
+The ids are defined into the css/skin.css file. This css file is used to define the colors.
+
+/*************************/
+general elements
+/*************************/
+
+With "general elements" we intend the main background color of the template, the logo, the menu and the footer.
+These elements are present in every page, so let's look how to edit them.
+For this help file we will refer to the skin_1 files.
+
+/*************************/
+main background color
+/*************************/
+
+To edit the main background color, open the css folder, then open the skin.css file with your text editor.
+At the beginning of the skin.css file, from line 6 to 8, you will find these lines:
+
+body{
+
+	background-color:#111;
+
+}
+
+Replace the #111 color code with the color code that you want to use as background.
+
+Note that editing the main background color you won't notice a big change in your template.
+The new color will be visible only under the footer.
+
+To completely edit the background color you will also need to edit the background colors of the divs of the contents of each page.
+We'll see how to edit these colors later in this help file, when will explain every single page in detail.
+
+/*************************/
+logo
+/*************************/
+
+To edit the logo you can simply replace the logo.png file into the images/skin/ folder, if you intend to use a png file.
+
+If you want to set a different image format or set a new path for the logo, open the skin.css file and from line 80 you will find:
+
+#menu .logo a{
+
+	background-image:url('../images/skin/logo.png');
+
+	background-position:0px 0px;
+
+	background-repeat:no-repeat;
+
+}
+
+Just set the new path of your logo image here, line 81 of the skin.css file:
+
+background-image:url('../images/skin/logo.png');
+
+/*************************/
+menu
+/*************************/
+
+The menu has a full width background with a colored bottom line. To edit these elements open the skin.css file and go to line 76.
+You will find these lines:
+
+#menu{
+
+	background-color:#111;
+
+	border-bottom:solid 1px #333;
+
+}
+
+To edit the color of the menu buttons text open the skin.css file and edit the lines from 88 to 91:
+
+.sf-menu li a{
+
+	color:#999;
+
+	border:none;
+
+}
+
+To edit the roll over color of the menu buttons text open the skin.css file and edit the lines from 103 to 105:
+
+.sf-menu li a:hover{
+
+	color:#eee;
+
+}
+
+When a main menu button or a related sub menu button is selected, the main menu button is highlighted and underlined.
+To edit the colors of the selected menu button and its line open the skin.css file and edit the lines from 106 to 111:
+
+.sf-menu .current{
+
+	border-bottom:solid 2px #98d8f3;
+
+}
+
+.sf-menu .current a, .sf-menu .current a span, .sf-menu .current a:hover, .sf-menu .current a:hover span{
+
+	color:#98d8f3;
+
+}
+
+Is possible to edit the colors of the sub menu buttons of the selected main menu button.
+To do so open the skin.css file and edit the lines from 112 to 117:
+
+.sf-menu .current ul li a{
+
+	color:#999;
+
+}
+
+.sf-menu .current ul li a:hover{
+
+	color:#eee;
+
+}
+
+When a button has a sub menu, there is an arrow image that indicates the presence of the sub menu.
+In the skin_1 theme this arrow is not visible because it's black.
+You can edit the color of the arow using the related psd file (psd/buttons_and_arrows.psd) and re-export the png file.
+In the white theme this arrow is visible, so check the skin_2 for reference.
+
+To edit the style and the path of this image open the skin.css file and edit the lines from 118 to 122:
+
+.sf-sub-indicator{
+
+	background-image:url('../images/skin/sub_menu_arrow.png');
+
+	background-position:-20px -100px;
+
+	background-repeat:no-repeat;
+
+}
+
+/*************************/
+menu structure
+/*************************/
+
+How to add or delete a manu button and how to create the sub menus?
+
+In every html page the menu is created like this (this is the menu of the index.html page):
+
+<ul class="sf-menu">
+
+	<li class="current"><a href="" title="Home">Home<span>Index page</span></a>
+
+		<ul>
+
+			<li><a href="index_no_flash.html" title="Index No Flash">Index No Flash</a></li>
+
+		</ul>
+
+	</li>
+
+	<li><a href="about.html" title="About">About<span>Our company</span></a>
+
+		<ul>
+
+			<li><a href="about.html#history" title="History">History</a></li>
+
+			<li><a href="about.html#philosophy" title="Philosophy">Philosophy</a></li>
+
+			<li><a href="about.html#mission" title="Our Mission">Our Mission</a></li>
+
+			<li><a href="single_news_page.html" title="Single News Page">Single News Page</a></li>
+
+			<li><a href="single_work_page.html" title="Single Work Page">Single Work Page</a></li>
+
+			<li><a href="full_width_page.html" title="Full Width Page">Full Width Page</a></li>
+
+			<li><a href="#" title="Sub menu">Sub menu</a>
+
+				<ul>
+
+					<li><a href="blog.html" title="Blog">Blog</a></li>
+
+					<li><a href="contact.php" title="Contact">Contact</a></li>
+
+				</ul>
+
+			</li>
+
+		</ul>
+
+	</li>
+
+	<li><a href="galleries.html" title="Galleries">Galleries<span>Our showcase</span></a></li>
+
+	<li><a href="blog.html" title="Blog">Blog<span>Read our blog</span></a></li>
+
+	<li><a href="contact.php" title="Contact">Contact<span>Send us an email</span></a></li>
+
+</ul>
+
+The menu has a tree structure, based on the <ul></ul> and <li></li> tags.
+The main menu is contained by the <ul class="sf-menu"></ul> tags.
+The <ul></ul> tag can contain unlimited <li></li> items.
+Every <li></li> item is a menu button, like this one:
+
+<li><a href="about.html#history" title="History">History</a></li>
+
+To create a sub menu you have to nest a new <ul></ul> into the <li></li> item, like this:
+
+<li class="current"><a href="" title="Home">Home<span>Index page</span></a>
+
+	<ul>
+
+		<li><a href="index_no_flash.html" title="Index No Flash">Index No Flash</a></li>
+
+	</ul>
+
+</li>
+
+In this example the Home button of the main menu has one sub menu button.
+This is it, very simple. You can nest sub menus without limitation, so you can create sub menus at any level.
+In the example we have created also a 3d level sub menu, check the level of this button in the menu tree structure:
+
+<li><a href="blog.html" title="Blog">Blog</a></li>
+
+/*************************/
+footer
+/*************************/
+
+The footer of the pages doesn't have a background color. It takes the main background color of the template set to the body as seen before.
+To edit the colors of the footer elements open the skin.css file and edit the lines from 446 to 469:
+
+#footer{
+
+	border-top:solid 1px #333;
+
+}
+
+	#footer_contents p{
+
+		color:#555;
+
+	}
+
+	#footer_contents a{
+
+		border:none;
+
+	}
+
+	#footer_contents form{
+
+		background-color:#000;
+
+	}
+
+	#footer_contents input{
+
+		color:#eee;
+
+	}
+
+	#footer_contents .button_search{
+
+		color:#ddd;
+
+		border-left:solid 2px #181818;
+
+		background-color:#000;
+
+	}
+
+	#footer_contents .button_search:hover{
+
+		color:#ddd;
+
+		background-color:#000;
+
+	}
+
+The footer contains also some social network icons.
+If you look at the html mark up of each page you will see an unordered list that we use to list the icons:
+
+<ul>
+
+	<li>|</li>
+
+	<li><a href="#" title=""><img src="images/network_icons/feed.gif" alt="Feed" /></a></li>
+
+	<li><a href="#" title=""><img src="images/network_icons/twitter.gif" alt="Twitter" /></a></li>
+
+	<li><a href="#" title=""><img src="images/network_icons/facebook.gif" alt="Facebook" /></a></li>
+
+</ul>
+
+To add new icons you simply have to add a new <li></li> item to the list, like this one:
+
+<li><a href="#" title=""><img src="images/network_icons/facebook.gif" alt="Facebook" /></a></li>
+
+/*************************/
+index.html page
+/*************************/
+
+The index.html page is the homepage of the template.
+This page, like every other page of the template, doesn't have a main container div, but it has different full width divs to hold the different contents of the page.
+All these divs have the same css style class "wrapper" that you can find into the style.css file from lines 84 to 89:
+
+.wrapper{
+
+	overflow:hidden;
+
+	margin:0px;
+
+	padding:0px;
+
+	width:100%;
+
+}
+
+The index.html page has 4 main divs; one for the menu, one for the main headers and slides, one for the contents and one for the footer.
+
+All these divs, with the only exception of the one of the footer, have a background color.
+If you want to edit the background color of your template, as said before, you need  to edit also the background color of these divs.
+
+We've already described how to edit the background of the menu, so let's see how to edit the background of the main div and of the contents div.
+
+To edit the background color of the main div (the one that contains the flash banner rotator, the jquery slide and the news ticker) open the skin.css file and edit the lines from 130 to 132:
+
+#header_index{
+
+	background-color:#181818;
+
+}
+
+To edit the background color of the contents div (the one that contains the text and the links) open the skin.css file and edit the lines from 236 to 238:
+
+#text{
+
+	background-color:#181818;
+
+}
+
+To edit the color and the style of all the other specific elements of the index.html page open the skin.css file and look for the style ids used into the html page.
+
+The main div contains the flash banner rotator, the 3 items slide to present the latest news or works and the news ticker.
+
+The flash banner rotator is driven by one XML file. At the end of this help you will find the complete instructions about how to edit its contents and edit its style.
+
+Under the flash banner rotator there is a 3 items slide that rotates contents based on a time interval.
+This slide uses the jquery plugin CYCLE (http://malsup.com/jquery/cycle/).
+To edit the settings of this slide, the time interval and the transition effect open the jscript/custom.js file and edit the lines from 72 to 77:
+
+jQuery("#slide").cycle({
+
+	fx: 'fade',
+
+    	next: '#slide_button_next', 
+
+    	prev: '#slide_button_prev',
+
+    	timeout: 9000
+});
+
+For reference and for different transition effects check the plugin homepage (http://malsup.com/jquery/cycle/).
+
+The slide items are organized in blocks of 3 items contained by an <ul></ul> element, like this one of the index.html page:
+
+<ul class="slide_items">
+
+	<li class="left">
+
+		<a href="images/photos/home/04.jpg" rel="prettyPhoto[latest]"><img src="images/thumbs/home/04.jpg" alt="" /></a>
+
+		<h2><a href="single_work_page.html" title="Read more">Item title four</a></h2>
+
+		<p>Eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+
+		<a href="single_work_page.html" title="Read more" class="read_more">Read more...</a>
+
+	</li>
+
+	<li class="center">
+
+		<a href="images/photos/home/08.jpg" rel="prettyPhoto[latest]"><img src="images/thumbs/home/08.jpg" alt="" /></a>
+
+		<h2><a href="single_work_page.html" title="Read more">Item title five</a></h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore...</p>
+
+		<a href="single_work_page.html" title="Read more" class="read_more">Read more...</a>
+
+	</li>
+
+	<li class="right">
+
+		<a href="images/photos/home/09.jpg" rel="prettyPhoto[latest]"><img src="images/thumbs/home/09.jpg" alt="" /></a>
+
+		<h2><a href="single_work_page.html" title="Read more">Item title six</a></h2>
+
+		<p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat...</p>
+
+		<a href="single_work_page.html" title="Read more" class="read_more">Read more...</a>
+
+	</li>
+
+</ul>
+
+You can create more than one block just creating new <ul></ul> blocks, like in the index.html page (check the page code as reference).
+Each item is contained by an <li></li> element and each one has a different style class: "left", "center" and "right".
+It's not mandatory to have 3 items in each block, you can have a block with only the "left" and "center" items if you want.
+The items are connected to the prettyPhoto plugin (http://www.no-margin-for-errors.com).
+
+Every item is related to the same image group "latest":
+
+rel="prettyPhoto[latest]"
+
+In this way when you open the large image you will be able to browse all the images related to the same group.
+
+Like the jquery slide also the news ticker uses the jquery plugin CYCLE (http://malsup.com/jquery/cycle/).
+To edit the settings of this news ticker, the time interval and the transition effect open the jscript/custom.js file and edit the lines from 79 to 82:
+
+jQuery("#news_ticker ul").cycle({
+
+	fx: 'fade',
+
+   	timeout: 9000
+});
+
+The news that are shown by the news ticker are contained by an <ul></ul> element, like this one of the index.html page:
+
+<ul>
+
+	<li><a href="single_news_page.html" title="Read more"><span>01.12.2009</span>: Eiusmod tempor incidunt ut labore et dolore magna...</a></li>
+
+	<li><a href="single_news_page.html" title="Read more"><span>02.12.2009</span>: Lorem ipsum dolor sit amet, consectetur adipisici...</a></li>
+
+	<li><a href="single_news_page.html" title="Read more"><span>03.12.2009</span>: Enim ad minim veniam, quis nostrud exercitation...</a></li>
+
+	<li><a href="single_news_page.html" title="Read more"><span>04.12.2009</span>: Incidunt ut labore et dolore magna aliqua...</a></li>
+
+	<li><a href="single_news_page.html" title="Read more"><span>05.12.2009</span>: Lorem ipsum dolor sit amet, consectetur adipisici elit...</a></li>
+
+	<li><a href="single_news_page.html" title="Read more"><span>06.12.2009</span>: Minim veniam, quis nostrud exercitation ullamco...</a></li>
+
+</ul>
+
+So, basically, if you want to add a new item you just need to ad a new <li></li> element, like this one:
+
+<li><a href="single_news_page.html" title="Read more"><span>06.12.2009</span>: Minim veniam, quis nostrud exercitation ullamco...</a></li>
+
+The styles of all the texts, lists, links and for every other tag are set at the beginning of the skin.css file.
+
+/*************************/
+index_no_flash.html page
+/*************************/
+
+The index_no_flash.html page is basically the same as the index.html page.
+The only difference is that instead of the flash banner rotator we've used a jquery slide.
+
+Like the jquery slide we've seen before and the news ticker, this slide uses the jquery plugin CYCLE (http://malsup.com/jquery/cycle/).
+To edit the settings of this slide, the time interval and the transition effect open the jscript/custom.js file and edit the lines from 59 to 70:
+
+if (jQuery("#featured img").length > 1){
+
+	jQuery("#featured_button_prev, #featured_button_next").css({display:"block"});
+
+	jQuery("#featured").cycle({
+
+		fx: 'fade',
+
+    		next: '#featured_button_next', 
+
+    		prev: '#featured_button_prev',
+
+    		timeout: 5000
+
+    	});
+
+    	jQuery("#featured").css({zIndex:0});
+
+    	jQuery("#featured_button_prev").css({zIndex:1});
+
+	jQuery("#featured_button_next").css({zIndex:2});
+
+}
+
+For reference and for different transition effects check the plugin homepage (http://malsup.com/jquery/cycle/).
+
+To add, edit or remove the items of the slide you should just work on the "featured" div into the index_no_flash.html page:
+
+<div id="featured">
+
+	<img src="images/photos/home/02.jpg" alt="" />
+
+	<img src="images/photos/home/03.jpg" alt="" />
+
+	<img src="images/photos/home/04.jpg" alt="" />
+
+</div>
+
+Basically you just need to add a new img element to this div to add a new element to the slide, like this one:
+
+<img src="images/photos/home/01.jpg" alt="" />
+
+/*************************/
+about.html page
+/*************************/
+
+The about.html page is a two column page.
+It has 4 main divs:
+
+The first div is the one that contains the menu, that we've already seen in this help.
+The last div is the footer div, that we've already seen in this help.
+
+The second one is the main div that has 2 columns.
+The left column contains the sub navigation and the latest news.
+The right column contains a jquery slide as header and the main text of the page.
+
+The main div has a background that you can edit opening the skin.css file and editing the lines from 133 to 135:
+
+#header_page{
+
+	background-color:#181818;
+
+}
+
+The right column of the main div contains a jquery slide on top of the main text of the page.
+
+Like the jquery slides we've seen before, this slide uses the jquery plugin CYCLE (http://malsup.com/jquery/cycle/).
+To edit the settings of this slide, the time interval and the transition effect open the jscript/custom.js file and edit the lines from 84 to 90:
+
+jQuery("#gallery").css({zIndex:0});
+   	if (jQuery("#gallery img").length > 1){
+    	jQuery("#gallery").cycle({
+			fx: 'fade',
+   			timeout: 5000
+    	});
+}
+
+For reference and for different transition effects check the plugin homepage (http://malsup.com/jquery/cycle/).
+
+To add, edit or remove the items of the slide you should just work on the "gallery" div into the about.html page:
+
+<div id="gallery">
+
+	<img src="images/photos/about/02.jpg" alt="" />
+
+	<img src="images/photos/about/03.jpg" alt="" />
+
+	<img src="images/photos/about/01.jpg" alt="" />
+
+</div>
+
+Basically you just need to add a new img element to this div to add a new element to the slide, like this one:
+
+<img src="images/photos/about/04.jpg" alt="" />
+
+The left column of the main div contains the sub navigation and the latest news.
+
+The third div is the text div that contains the services and the team lists.
+This div has a background color, that is managed by the same style of the text div of the index.html page.
+To edit the background color of the text div open the skin.css file and edit the lines from 236 to 238:
+
+#text{
+
+	background-color:#181818;
+
+}
+
+To edit the color and the style of all the other specific elements of the about.html page open the skin.css file and look for the style ids used into the html page.
+
+/*************************/
+blog_post.html page
+/*************************/
+
+The blog_post.html page is a two column page.
+It has 3 main divs:
+
+The first div is the one that contains the menu, that we've already seen in this help.
+The last div is the footer div, that we've already seen in this help.
+
+The second one is the main div that has 2 columns.
+The left column contains the links to: the blog latest posts, the blog categories, the blog links and the blog archive.
+The right column contains the header image of the blog post, the blog post itself, the comments block and the form to post the comments.
+
+The main div has a background that you can edit opening the skin.css file and editing the lines from 133 to 135:
+
+#header_page{
+
+	background-color:#181818;
+
+}
+
+To edit the color and the style of all the other specific elements of the blog_post.html page open the skin.css file and look for the style ids used into the html page.
+
+/*************************/
+blog.html page
+/*************************/
+
+The blog.html page is a two column page.
+It has 3 main divs:
+
+The first div is the one that contains the menu, that we've already seen in this help.
+The last div is the footer div, that we've already seen in this help.
+
+The second one is the main div that has 2 columns.
+The left column contains the links to: the blog latest posts, the blog categories, the blog links and the blog archive.
+The right column contains the list of the blog posts with the pagination at the bottom.
+
+Every blog post element of the list is contained by a div identified by the "entry" class that you can find into the style.css file 443 to 490.
+
+<div class="entry">
+
+	<div class="title_date">
+
+		<h2><a href="blog_post.html" title="Title">Minimal Slogan Rotator R1</a></h2>
+
+		<p class="date">21.11.09</p>
+
+	</div>
+
+	<p><a href="blog_post.html" title="Title"><img src="images/photos/about/04.jpg" alt="" /></a></p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+
+	<div class="meta">
+
+		<p>Posted by <a href="" title="">p&amp;k</a> . Categories: <a href="" title="">Architecture</a> . <a href="" title="">Graphic Desing</a></p>
+
+		<p class="read_all"><a href="blog_post.html" title="Title">Read all</a></p>
+
+	</div>
+
+</div>
+
+The last post of the list has also an id tag "latest_entry":
+
+<div class="entry" id="last_entry">
+
+This id is defined into the style.css file from line 491 to line 493:
+
+#last_entry{
+
+	margin-bottom:0px;
+
+}
+
+Basically this style of the latest post is used only to set the margin-bottom of the latest post div to 0px. 
+
+The main div has a background that you can edit opening the skin.css file and editing the lines from 133 to 135:
+
+#header_page{
+
+	background-color:#181818;
+
+}
+
+To edit the color and the style of all the other specific elements of the blog.html page open the skin.css file and look for the style ids used into the html page.
+
+/*************************/
+full_width_page.html page
+/*************************/
+
+The full_width_page.html page is a two column page.
+It has 3 main divs:
+
+The first div is the one that contains the menu, that we've already seen in this help.
+The last div is the footer div, that we've already seen in this help.
+
+The second one is the main div that is a full width column.
+
+The main div has a background that you can edit opening the skin.css file and editing the lines from 136 to 138:
+
+#header_galleries{
+
+	background-color:#181818;
+
+}
+
+To edit the color and the style of all the other specific elements of the full_width_page.html page open the skin.css file and look for the style ids used into the html page.
+
+/*************************/
+galleries.html page
+/*************************/
+
+The galleries.html page has 4 main divs:
+
+The first div is the one that contains the menu, that we've already seen in this help.
+The last div is the footer div, that we've already seen in this help.
+
+The second one is the main div that contains the latest gallery detail.
+This dive is divided in 2 columns.
+The left one presents a descriptive text of the latest gallery.
+The right one has a jquery slide connected to the prettyPhoto plugin (http://www.no-margin-for-errors.com).
+
+<div id="gallery">
+
+	<a href="images/photos/about/01.jpg" rel="prettyPhoto[latest]"><img src="images/photos/about/01.jpg" alt="" /></a>
+
+	<a href="images/photos/about/02.jpg" rel="prettyPhoto[latest]"><img src="images/photos/about/02.jpg" alt="" /></a>
+
+	<a href="images/photos/about/03.jpg" rel="prettyPhoto[latest]"><img src="images/photos/about/03.jpg" alt="" /></a>
+
+</div>
+
+This slide works exactly like the ones we've seen before in this help. 
+Every item is related to the same image group "latest":
+
+rel="prettyPhoto[latest]"
+
+In this way when you open the large image you will be able to browse all the images related to the same group.
+
+The main div has a background that you can edit opening the skin.css file and editing the lines from 130 to 132:
+
+#header_index{
+
+	background-color:#181818;
+
+}
+
+The third div is the galleries grid, where are presented a series of thumbs.
+All the thumbs are contained by an <ul></ul> element.
+
+every thumb is a <li></li> element, like this one:
+
+<li>
+
+	<a href="images/photos/home/08.jpg" rel="prettyPhoto[galleries]"><img src="images/thumbs/galleries/08.jpg" alt="" /></a>
+
+	<h3>Gallery title one</h3>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+
+	<a href="#" title="View gallery" class="view_gallery">Read all</a>
+
+</li>
+
+Each thumb opens a bigger image always using the prettyPhoto plugin. All the thumbs are related to the same group:
+
+rel="prettyPhoto[galleries]"
+
+So, as seen before, when you open the big image related to the selected thumb you'll be able to navigate all the big images related to the same group.
+
+To edit the color and the style of all the other specific elements of the galleries.html page open the skin.css file and look for the style ids used into the html page.
+
+/*************************/
+single_news_page.html page
+/*************************/
+
+The single_news_page.html page is a two column page.
+It has 3 main divs:
+
+The first div is the one that contains the menu, that we've already seen in this help.
+The last div is the footer div, that we've already seen in this help.
+
+The second one is the main div that has 2 columns.
+The left column contains the links to the latest news and to the news archive.
+The right column contains the header image of the news, the news text and the prev and next buttons to navigate to the previous or to the next news.
+
+The main div has a background that you can edit opening the skin.css file and editing the lines from 133 to 135:
+
+#header_page{
+
+	background-color:#181818;
+
+}
+
+To edit the color and the style of all the other specific elements of the single_news_page.html page open the skin.css file and look for the style ids used into the html page.
+
+/*************************/
+single_work_page.html page
+/*************************/
+
+The single_work_page.html page is a two column page.
+It has 3 main divs:
+
+The first div is the one that contains the menu, that we've already seen in this help.
+The last div is the footer div, that we've already seen in this help.
+
+The second one is the main div that has 2 columns.
+The left column contains the links to the works categories and to the works archive.
+The right column contains the header image of the work, the work description and the prev and next buttons to navigate to the previous or to the next work page.
+
+The main div has a background that you can edit opening the skin.css file and editing the lines from 133 to 135:
+
+#header_page{
+
+	background-color:#181818;
+
+}
+
+To edit the color and the style of all the other specific elements of the single_work_page.html page open the skin.css file and look for the style ids used into the html page.
+
+/*************************/
+contact.php page
+/*************************/
+
+The contact.php page is a php file and to be viewed you need to run your template on a web server.
+
+The contact.php page is a two column page.
+It has 3 main divs:
+
+The first div is the one that contains the menu, that we've already seen in this help.
+The last div is the footer div, that we've already seen in this help.
+
+The second one is the main div that has 2 columns.
+The left column contains all the contact information.
+The right column contains a jquery slide as header and the contact form.
+
+Like the jquery slides we've seen before, this slide uses the jquery plugin CYCLE (http://malsup.com/jquery/cycle/).
+To edit the settings of this slide, the time interval and the transition effect open the jscript/custom.js file and edit the lines from 84 to 90:
+
+jQuery("#gallery").css({zIndex:0});
+   	if (jQuery("#gallery img").length > 1){
+    	jQuery("#gallery").cycle({
+			fx: 'fade',
+   			timeout: 5000
+    	});
+}
+
+For reference and for different transition effects check the plugin homepage (http://malsup.com/jquery/cycle/).
+
+To add, edit or remove the items of the slide you should just work on the "gallery" div into the contact.php page:
+
+<div id="gallery">
+
+	<img src="images/photos/about/04.jpg" alt="" />
+
+	<img src="images/photos/about/03.jpg" alt="" />
+
+	<img src="images/photos/about/06.jpg" alt="" />
+
+</div>
+
+Basically you just need to add a new img element to this div to add a new element to the slide, like this one:
+
+<img src="images/photos/about/05.jpg" alt="" />
+
+The main div has a background that you can edit opening the skin.css file and editing the lines from 133 to 135:
+
+#header_page{
+
+	background-color:#181818;
+
+}
+
+To edit the color and the style of all the other specific elements of the contact.php page open the skin.css file and look for the style ids used into the php page.
+
+/*************************/
+contact.php page form
+/*************************/
+
+The contact.php page uses the sendMail.php file to send the emails from the contact form of the template.
+
+The contact form also uses javascript to show the error messages if a required field of the contact form is not correctly filled.
+
+Let's see how to set up your contact form:
+
+First of all, open with a simple text editor the sendMail.php file.
+Into this file you must set your email address, at line 9:
+
+$adminEmail = "info@yourdomain.com";
+
+Just type the email address where you want to receive the emails coming from the contact form of the site.
+
+Always into the sendMail.php file, you can edit the error messages of every field of the contact form.
+
+After you make any change to this file, be sure to save it with utf-8 encoding.
+To do so, if you're editing it with notepad, just chose the "save as" option and chose the utf-8 encoding from the list.
+
+The success message that appears when an email is successfully sent is set into the custom.js file that is located into the jscript folder.
+Open this file and go to line 18 to edit the success message:
+
+jQuery(this).html('<p>Your message has been sent. Thanks!</p>');
+
+/*************************/
+style.css file
+/*************************/
+
+The style.css is the main css file for the layout of the template.
+
+/********************************************************/
+How to use the flash banner rotator:
+/********************************************************/
+
+The home page of this template uses a flash banner rotator to show a selection of works.
+If you don't want to use flash on your template, we've created an alternative home page that uses a java script slide.
+Check the index_no_flash.html file.
+
+To use this banner rotator you don't need any flash knowledge, everything is managed by XML.
+
+Let's check the default "flash/XML/banner.XML" file to understand how this XML files is composed.
+
+Open the banner.XML file with your text editor: there are 2 main nodes: "settings" and "items".
+This is what it looks like, check the comments for the accepted values of some attributes:
+
+
+<?XML version="1.0" encoding="utf-8"?>
+<index>
+	<settings
+		bannerWidth = "690"
+		bannerHeight = "400"
+		bannerHorizontalMargin = "10"
+		bannerVerticalMargin = "10"
+		bannerBackGroundAlpha = "100"
+		bannerBackGroundColor = "0xeeeeee"
+
+			-> the displayMenu attribute can be "yes" or "no"
+
+		displayMenu = "yes"
+
+			-> the displayInfos attribute can be "yes" or "no"
+
+		displayInfos = "no"
+
+			-> the displayButtonNextPrev attribute can be "yes" or "no"
+
+		displayButtonNextPrev = "yes"
+
+			-> the displayButtonSlideshow attribute can be "yes", "no", or "autoHide"
+
+		displayButtonSlideshow = "autoHide"
+
+		menuXposition = "510"
+		menuYposition = "350"
+		menuButtonsSpace = "3"
+		menuButtonsVisible = "4"
+
+			-> the menuOrientation attribute can be "horizontal" or "vertical"
+
+		menuOrientation = "horizontal"
+
+		buttonNextXposition = "680"
+		buttonNextYpoistion = "200"
+		buttonPrevXposition = "10"
+		buttonPrevYposition = "200"
+		buttonSlideshowXposition = "426"
+		buttonSlideshowYposition = "200"
+		buttonsIconColor = "0xffffff"
+		buttonsBackGroundColor = "0xff7f00"
+
+			-> the buttonsRotate attribute can be "yes" or "no"
+
+		buttonsRotate = "no"
+
+			-> the slideshowAutostart attribute can be "yes" or "no"
+
+		slideshowAutostart = "yes"
+
+		slideshowAnimationIconColor = "0x000000"
+		slideshowAnimationBackGroundColor = "0xffffff"
+
+			-> the transitionType attribute can be a number from "1" to "10"
+
+		transitionType = "6"
+
+			-> the transitionEasingDuration attribute represents the duration of the transitions expressed in seconds
+
+		transitionEasingDuration = "1"
+
+			-> the transitionEasingType attribute represents the type of easing of the transitions
+			-> you can check all the available transitions at this address: http://hosted.zeh.com.br/tweener/docs/en-us/
+
+		transitionEasingType = "easeInOutExpo"
+
+		infosXposition = "426"
+		infosYposition = "10"
+		infosWidth = "254"
+		infosHeight = "380"
+		infosBackGroundAlpha = "75"
+		infosBackGroundColor = "0xa3a856"
+
+		titleXposition = "30"
+		titleYposition = "60"
+		titleWidth = "194"
+
+			-> the titleTextAlign attribute can be "left", "right" or "center"
+
+		titleTextAlign = "left"
+
+		descriptionXposition = "30"
+		descriptionYposition = "120"
+		descriptionWidth = "194"
+
+			-> the descriptionTextAlign attribute can be "left", "right" or "center"
+
+		descriptionTextAlign = "left"
+
+		preloaderXposition = "345"
+		preloaderYpoistion = "200"
+	/>
+	<items>
+
+			-> every item node represent an image of the banner rotator
+			-> they include some settings to handle the properties of the banner elements when an image is visualized
+			-> you can add or delete as many items as you need, there are no limits
+			-> if you delete an item be sure to completely delete from the opening tag <item> to the closing tag </item>
+			-> if you leave a broken tag or if you delete an item in a wrong way the banner rotator will not work correctly
+
+		<item>
+			<itemSettings
+				buttonsIconColor = "0x000000"
+				buttonsBackGroundColor = "0x98d8f3"
+				infoBackGroundColor = ""
+				slideshowInterval = "5"
+				slideshowAnimationIconColor = "0x000000"
+				slideshowAnimationBackGroundColor = "0xffffff"
+				targetLink = ""
+			/>
+			<file><![CDATA[images/photos/home/02.jpg]]></file>
+			<title><![CDATA[Your title text here]]></title>
+			<description><![CDATA[Your description text here]]></description>
+			<link><![CDATA[Your link here]]></link>
+		</item>
+		<item>
+			<itemSettings
+				buttonsIconColor = "0x000000"
+				buttonsBackGroundColor = "0x98d8f3"
+				infoBackGroundColor = ""
+				slideshowInterval = "5"
+				slideshowAnimationIconColor = "0x000000"
+				slideshowAnimationBackGroundColor = "0xffffff"
+				targetLink = ""
+			/>
+			<file><![CDATA[images/photos/home/03.jpg]]></file>
+			<title><![CDATA[Your title text here]]></title>
+			<description><![CDATA[Your description text here]]></description>
+			<link><![CDATA[Your link here]]></link>
+		</item>
+		<item>
+			<itemSettings
+				buttonsIconColor = "0x000000"
+				buttonsBackGroundColor = "0x98d8f3"
+				infoBackGroundColor = ""
+				slideshowInterval = "5"
+				slideshowAnimationIconColor = "0x000000"
+				slideshowAnimationBackGroundColor = "0xffffff"
+				targetLink = ""
+			/>
+			<file><![CDATA[images/photos/home/04.jpg]]></file>
+			<title><![CDATA[Your title text here]]></title>
+			<description><![CDATA[Your description text here]]></description>
+			<link><![CDATA[Your link here]]></link>
+		</item>
+	</items>
+</index>
+
+/********************************************************/
+Contact:
+/********************************************************/
+
+For any suggestion or question please contact us through our profile page on activeden:
+http://www.themeforest.net/user/ParkerAndKent
