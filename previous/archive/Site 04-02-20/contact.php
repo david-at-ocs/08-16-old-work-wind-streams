@@ -44,7 +44,7 @@ $(document).ready(function() {
 <div class="wrap">
 	<!--  Begin header -->
 	<div class="header">
-    	<a class="logo" href="index.html">WindStream Technologies</a>
+    	<a class="logo" href="home.html">WindStream Technologies</a>
         
         <!--  Begin menu -->
         <div class="nav_holder">

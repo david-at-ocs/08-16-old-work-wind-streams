@@ -30,11 +30,11 @@
 
 	<body class="wrap">
 	
-<!----------------------------------------------- Header starts here ----------------------------------------------------------->
+<!----------------------------------------------- Header starts here --------------------------------------------------------- -->
 	
 		<div id="headercontainer">
 			<ul id="logocontainer">
-				<li><a id="home" href="index.html" title="Home"><span>Home</span></a></li>
+				<li><a id="home" href="home.html" title="Home"><span>Home</span></a></li>
 			</ul>
 			<div id="headlinecontainer"><h1>Unleashing affordable wind energy for the mainstream.</h1></div>
 			<ul id="nav">
@@ -45,7 +45,7 @@
 			</ul>
 		</div>
 	
-<!----------------------------------------------- Banner starts here ----------------------------------------------------------->
+<!----------------------------------------------- Banner starts here --------------------------------------------------------- -->
 	
 		<div id="spacer">&nbsp;</div>
 		<div id="bannerbackgound" style="height: 164px;">
@@ -54,7 +54,7 @@
 			</div>
 		</div>	
 	
-<!----------------------------------------------- Body starts here ----------------------------------------------------------->
+<!----------------------------------------------- Body starts here --------------------------------------------------------- -->
 
 		<div id="bodybg">
 			<div id="spacer2">&nbsp;</div>
@@ -143,7 +143,7 @@ var a='';var b='2rafemoa% 0eioa%@m3 C3oii%nna 3%tw-2ii/ %hmnrofem %fl@m2w-C 322A
 			</div>
 		</div>
 		<div id="footer">
-			<p id="footermenu"><a class="footeritem" href="index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="company.html">Company</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="products.html">Products</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="careers.html">Careers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="contact.php">Contact</a><!--&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="sitemap.html">Sitemap</a>--></p></p>
+			<p id="footermenu"><a class="footeritem" href="home.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="company.html">Company</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="products.html">Products</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="careers.html">Careers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="contact.php">Contact</a><!--&nbsp;&nbsp;|&nbsp;&nbsp;<a class="footeritem" href="sitemap.html">Sitemap</a>--></p></p>
 			<p id="copyright">&copy;2011 WindStream Technologies, Inc.</p>
 		</div>
 
